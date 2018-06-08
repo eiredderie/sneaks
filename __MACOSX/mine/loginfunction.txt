@@ -1,0 +1,33 @@
+function login($email, $password){
+		
+        $stmt = $GLOBALS['conn']->prepare("SELECT UserID, U_Username, U_FirstName, U_MiddleName, U_LastName FROM Users WHERE U_Email = ? AND U_Password = ?");
+        $stmt->bind_param("ss",$email,md5($password));
+
+        if($stmt->execute()){
+            $result = $stmt->get_result();
+            if($result->num_rows === 0){
+                return json_encode(array('Error'=>0));
+                $_SESSION['loginErr']="Incorrect Username and Password".$email." ".$password;
+                header("Location:index.php");
+                }
+            }
+            else{
+                while($row = $result->fetch_assoc()){
+                    $_SESSION['id'] = $row['UserID'];
+                    $_SESSION['username'] = $row['U_Username'];
+                    $_SESSION['fname'] = $row['U_FirstName'];
+                    $_SESSION['mname'] = $row['U_MiddleName'];
+                    $_SESSION['lname'] = $row['U_LastName'];
+                    
+                    $_SESSION['loginErr']="Login Successfully";
+			        header("Location:home.php");
+		
+                }
+
+                return json_encode($returnarray);
+            }
+        }
+        else{
+            return json_encode(array('Error'=>1));
+        }
+	}

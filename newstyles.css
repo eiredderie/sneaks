@@ -1,0 +1,528 @@
+        html, body {
+            max-width: 100%;
+            overflow-x: hidden;
+            background-color: #f2f2f2;
+        }
+
+        .bloc_left_price {
+            color: #c01508;
+            text-align: center;
+            font-weight: bold;
+            font-size: 150%;
+        }
+        .category_block li:hover {
+            background-color: #007bff;
+        }
+        .category_block li:hover a {
+            color: #ffffff;
+        }
+        .category_block li a {
+            color: #343a40;
+        }
+        .add_to_cart_block .price {
+            color: #c01508;
+            text-align: center;
+            font-weight: bold;
+            font-size: 200%;
+            margin-bottom: 0;
+        }
+        .add_to_cart_block .price_discounted {
+            color: #343a40;
+            text-align: center;
+            text-decoration: line-through;
+            font-size: 140%;
+        }
+        .product_rassurance {
+            padding: 10px;
+            margin-top: 15px;
+            background: #ffffff;
+            border: 1px solid #6c757d;
+            color: #6c757d;
+        }
+        .product_rassurance .list-inline {
+            margin-bottom: 0;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        .product_rassurance .list-inline li:hover {
+            color: #343a40;
+        }
+        .reviews_product .fa-star {
+            color: gold;
+        }
+        .pagination {
+            margin-top: 20px;
+        }
+
+        .accounts_cat{
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .accounts_details{
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .accounts_addresses{
+            margin: 10px;
+            padding: 10px;
+        }
+        
+        .form-container{
+            align-content: flex-start;
+            justify-content: center;
+            align-items: flex-start;
+            display: inline-flex;
+            width: 100%;
+        }
+
+        .spacing {
+            padding-top:10px;
+            padding-bottom:10px;
+        }
+
+        .form-inputs{
+            width: 100%;
+            height: 40px;
+            padding: 10px;
+            color: black;
+        }
+
+        .left-right-form{
+            position: relative;
+            width: 325px;
+            background-color: grey;
+            padding: 20px;
+        }
+
+        .login-text{
+            font-family: 'Roboto';
+            font-size: 15px;
+        }
+
+        .main_con{
+            padding: 30px;
+            width: 100%;
+        }
+
+        .edit_acc{
+            font-size: 12px;
+        }
+
+        .form-login{
+            align-self: center;
+            flex-direction: row;
+            display: inline-flex;
+            margin: 30px;
+            width: 650px;
+        }
+
+        .choices-container{
+            margin: 5px;
+            padding: 15px;
+            width: 90%;
+            margin-right: 0px;
+            background-color: #fff;
+            justify-content: center;
+            flex-direction: column;
+            align-items: flex-start;
+            display: flex;
+            box-shadow: 0px 1px 1px 0px grey; 
+        }
+
+        .item-display{
+            width: 100%;
+            display: inline; 
+            margin: 15px; 
+            align-self: center; 
+            background-color: #000;
+            justify-content: center;
+        }
+
+        .choice-name{
+            font-family: 'Roboto';
+            font-size: 15px;
+            color: grey;
+            margin: 10px;
+        }
+
+        .item-container{
+            margin: 5px;
+            height: 380px;
+            width: 200px;
+            background-color: #fff;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: flex-start;
+            display: flex;
+            box-shadow: 0px 1px 1px 0px grey; 
+            display: inline-flex;
+        }
+        
+        .item-price{
+            font-family: 'Roboto';
+            font-size: 18px;
+            margin: 15px;
+            margin-top: 0px;
+            color: red;
+        }
+
+        .item-name{
+            font-family: 'Roboto';
+            font-size: 15px;
+            font-weight: lighter;
+            margin: 15px;
+            margin-top: 0px;
+        }
+
+        .item-button{
+            width: 170px;
+            height: 40px;
+            margin-left: 15px;
+            margin-right: 15px;
+            margin-bottom: 15px;
+        }
+
+        #flipkart-navbar {
+            background-color: #49575C;
+            color: #FFFFFF;
+            position: fixed;
+            width: 100%;
+            z-index:100;
+        }
+
+        .row1{
+            padding-top: 10px;
+        }
+        
+        a:link {
+            text-decoration: none;
+        }
+
+        .row2 {
+            padding-bottom: 10px;
+        }
+
+        .flipkart-navbar-input {
+            padding: 11px 16px;
+            border-radius: 2px 0 0 2px;
+            border: 0 none;
+            outline: 0 none;
+            font-size: 15px;
+            color: #000;
+        }
+
+        .flipkart-navbar-button {
+            background-color: #ffe11b;
+            border: 1px solid #ffe11b;
+            border-radius: 0 2px 2px 0;
+            color: #565656;
+            padding: 10px 0;
+            height: 43px;
+            cursor: pointer;
+        }
+
+        .cart-button {
+            padding: 10px 0;
+            text-align: center;
+            height: 40px;
+            border-radius: 2px;
+            font-weight: 500;
+            width: 40px;
+            display: inline-block;
+            color: #FFFFFF;
+            text-decoration: none;
+            color: inherit;
+            border: none;
+            outline: none;
+        }
+
+        .cart-badge{
+            margin-left: -20px; 
+            background-color: lightcoral; 
+            width: 20px; 
+            height: 20px; 
+            text-align: center;
+            position: absolute; 
+            border-radius: 20px; 
+            font-family: 'Roboto';
+            font-size: 15px;
+        }
+        .cart-button:hover{
+            text-decoration: none;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .cart-svg {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            vertical-align: middle;
+            margin-right: 0px;
+        }
+
+        .item-number {
+            border-radius: 3px;
+            background-color: rgba(0, 0, 0, .1);
+            height: 20px;
+            padding: 3px 6px;
+            font-weight: 500;
+            display: inline-block;
+            color: #fff;
+            line-height: 12px;
+            margin-left: 10px;
+        }
+
+        .upper-links {
+            display: inline-block;
+            padding: 0 9px;
+            line-height: 23px;
+            font-family: 'Roboto', sans-serif;
+            letter-spacing: 0;
+            color: #fff;
+            border: none;
+            outline: none;
+            font-size: 13px;
+        }
+
+        .upper-links:hover{
+            color: #000;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 0px;
+        }
+
+        .dropdown:hover {
+            background-color: #fff;
+        }
+
+        .dropdown:hover .links {
+            color: #000;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        .dropdown .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            display: none;
+            background-color: #fff;
+            color: #333;
+            left: 0px;
+            border: 0;
+            border-radius: 0;
+            box-shadow: 0 4px 8px -3px #555454;
+            margin: 0;
+            padding: 0px;
+        }
+
+        .links {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .links:hover {
+            color: #000;
+            text-decoration: none;
+        }
+
+        .profile-links {
+            font-size: 12px;
+            font-family: 'Roboto', sans-serif;
+            border-bottom: 1px solid #e9e9e9;
+            box-sizing: border-box;
+            display: block;
+            padding: 0 11px;
+            line-height: 23px;
+        }
+
+        .profile-li{
+            padding-top: 2px;
+        }
+
+        .largenav {
+            display: none;
+        }
+
+        .smallnav{
+            display: inline-flex;
+            text-align: 'center';
+        }
+
+        .smallsearch{
+            margin-left: 15px;
+            margin-top: 15px;
+        }
+
+        .menu{
+            cursor: pointer;
+        }
+        
+        .logotext{
+            display: none;
+        }
+
+        .logintext{
+            display: none;
+        }
+
+        .dropdown-toggle::after {
+            display:none
+        }
+        
+        #itemCount {
+            position: absolute;
+            display: none;
+            top: -10px;
+            left: -10px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: red;
+            color: white;
+            text-align: center;
+          }
+
+        @media screen and (min-width: 1200px) {
+            .logotext{
+                font-size: 25px;
+                font-family: 'Roboto', sans-serif;
+                display: inline-flex;
+                font-weight: bold;
+                margin-left: 10px;
+                position: relative;
+                align-self: 'center'
+            }
+            .logintext{
+                font-size: 17;
+                font-family: 'Roboto', sans-serif;
+                display: inline-flex;
+                font-weight: bold;
+                margin-left: 5px;
+                position: relative;
+                align-self: 'center'
+            }
+        }
+
+        @media screen and (max-width: 1199px) and (min-width: 993px){
+            .logotext{
+                font-size: 20px;
+                font-family: 'Roboto', sans-serif;
+                display: inline-flex;
+                font-weight: bold;
+                margin-left: 10px;
+                position: relative;
+                align-self: 'center'
+            }
+            .logintext{
+                font-size: 13;
+                font-family: 'Roboto', sans-serif;
+                display: inline-flex;
+                font-weight: bold;
+                margin-left: 5px;
+                position: relative;
+                align-self: 'center'
+            }
+        }
+
+        @media screen and (min-width: 700px) {
+            .largenav {
+                display: block;
+            }
+            .smallnav{
+                display: none;
+            }
+            .smallsearch{
+                margin: 0px;
+            }
+        }
+
+        /*Sidenav*/
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #fff;
+            overflow-x: hidden;
+            transition: 0.5s;
+            box-shadow: 0 4px 8px -3px #555454;
+            padding-top: 0px;
+            z-index:100;
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #49575C;
+            display: block;
+            transition: 0.3s
+        }
+
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+            color: #49575C;        
+        }
+
+        @media screen and (max-height: 450px) {
+        .sidenav a {font-size: 18px;}
+        }
+
+        .sidenav-heading{
+            font-size: 36px;
+            color: #fff;
+        }
+
+        .facebook{
+            background-color:#49575C;
+            color:#FBFCFC;
+        }
+
+        .twitter{
+            background-color:#49575C;
+            color:#FBFCFC;
+        }
+
+        .snapchat{
+            background-color:#49575C;
+            color:#FBFCFC;
+        }
+
+        .instagram{
+            background-color:#49575C;
+            color:#FBFCFC;
+        }
+
+        .facebook:hover{
+            background-color:#49575C;
+            color:#3B88D5;
+        }
+
+        .twitter:hover{
+            background-color:#49575C;
+            color:#479EF4;
+        }
+
+        .snapchat:hover{
+            background-color:#49575C;
+            color: yellow;
+        }
+
+        .instagram:hover{
+            background-color:#49575C;
+            color:#DB9540;
+        }
